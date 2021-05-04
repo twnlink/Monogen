@@ -15,7 +15,7 @@
 			sublimeKey = undefined;
 			vsKey = undefined;
 		} else if (email != undefined) {
-			// The Sublime Text key is justthe first 25 characters of an MD5 hash of the user's email.
+			// The Sublime Text key is just the first 25 characters of an MD5 hash of the user's email.
 			sublimeKey = formatKey(md5(email));
 			// The Visual Studio Code key is just the first 25 characters of an MD5 hash of the Monokai Pro VSCode extension ID with the user's email appended.
 			vsKey = formatKey(md5(monokaiExtensionID +  email));
